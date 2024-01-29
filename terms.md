@@ -46,7 +46,7 @@ Fuxlab GmbH \
 Am Südhang 4 \
 49545 Tecklenburg
 
-Telefon: +49 (0) 40 55820585 \
+Telefon: {{site.address.phone}} \
 E-Mail: mail@fuxlab.com
 
 Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten (z.B. Namen, E-Mail-Adressen o. Ä.) entscheidet.

@@ -5,42 +5,40 @@ layout: default
   {% include nav.html%}
 {% endif %}
 
-<div class="relative sm:overflow-hidden">
-  <div class="absolute inset-0">
-    <img class="h-full w-full object-cover" src="{{site.baseurl}}/assets/img/maxim-berg-h9sljx2r4Vk-unsplash.jpg" alt="">
-    <div class="absolute inset-0 bg-white opacity-50"></div>
+<div class="w-full relative block lg:mb-28 h-96">
+  <div class="lg:absolute lg:w-3/5 lg:h-96 z-50">
+    <img class="w-full h-full object-cover" src="{{site.baseurl}}/assets/img/maxim-berg-h9sljx2r4Vk-unsplash.jpg" alt="">
   </div>
-  <div class="relative px-4 py-16 sm:px-6 sm:py-24 lg:py-32 lg:px-8">
-    <div class="text-center">
-      <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
-        <span class="block">
-          Digital Product Development
-        </span>
-      </h2>
-      <div class="mt-8 flex justify-center">
-        <div class="inline-flex rounded-md">
-          <a href="{{site.baseurl}}/products" class="inline-flex items-center justify-center rounded-3xl border border-transparent bg-black px-5 py-3 text-base font-medium text-white hover:bg-gray-700">
-            Products
-          </a>
-        </div>
-        <div class="ml-3 inline-flex">
-          <a href="{{site.baseurl}}/partner" class="inline-flex items-center justify-center rounded-3xl border border-transparent bg-gray-200 px-5 py-3 text-base font-medium text-black hover:bg-green-200">
-            Technologies
-          </a>
-        </div>
+  <div class="lg:w-4/5 h-full top-1/4 lg:absolute right-0 bottom-0 ">
+    <div class="grid lg:grid-cols-2 -z-10 bg-gray-100">
+      <div>
+        &nbsp;
+      </div>
+      
+      <div class="p-8 lg:p-14">
+        <h1 class="text-3xl lg:mt-4 mb-8 font-bold tracking-tight text-gray-900 sm:text-4xl">
+          AI Product Design: <br/>We create intelligent digital products and processes, with state of the art technologies.
+        </h1>
+
+        Explore our
+        <a href="{{site.baseurl}}/products" class="underline hover:bg-green-300">
+          Products</a> & 
+        <a href="{{site.baseurl}}/partner" class="underline hover:bg-green-300">
+          Technologies</a>.
       </div>
     </div>
   </div>
 </div>
 
-<div class="px-4 py-24">
+<p class="text-green-400 px-4 py-16 text-xl font-semibold">
+  <strong>Fuxlab:</strong>
+  Born from a shared curiosity, our journey is about gently pushing the boundaries of what's possible with AI, focusing on thoughtful software solutions that aim to make a subtle yet meaningful impact. 
+  <br/>
+  <a href="{{site.baseurl}}/about" class="text-black hover:bg-black hover:text-green-300">–> more</a>
+</p>
+
+<!--div class="px-4 py-24">
   <div class="mx-auto max-w-xl lg:max-w-none">
-    <div class="text-center">
-      <h2 class="text-2xl font-bold tracking-tight text-gray-900">
-        our aim is it to create smart digital processes,<br/>
-        with state of the art technologies.
-      </h2>
-    </div>
     <div class="mx-auto mt-12 grid max-w-sm grid-cols-1 gap-y-10 gap-x-8 sm:max-w-none lg:grid-cols-2">
       <div class="text-center sm:flex sm:text-left lg:block lg:text-center">
         <div class="sm:flex-shrink-0">
@@ -83,24 +81,16 @@ layout: default
       </div>
     </div>
   </div>
-</div>
+</div-->
 
 <div class="pt-12 px-4">
-  <p class="text-center text-lg font-semibold text-gray-600">
+  <p class="text-center text-lg font-semibold text-black">
     We scale Cloud Products with ..
   </p>
 </div>
-{% assign scale-partner=site.partners| where: "type", "scale" %}
+{% assign scale-partner=site.partners %}
 {% include partners-list.html partners=scale-partner class="pb-12" %}
 
-
-<div class="pt-12 px-4">
-  <p class="text-center text-lg font-semibold text-gray-600">
-    For Wordpress Projects we use ..
-  </p>
-</div>
-{% assign wordpress-partner=site.partners| where: "type", "wordpress" %}
-{% include partners-list.html partners=wordpress-partner class="pb-12" %}
 
 {% include social-media.html %}
 {% include footer.html %}

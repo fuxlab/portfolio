@@ -16,7 +16,7 @@ Vertreten durch die Geschäftsführer:
 F. Cieslik
 
 ## Kontakt
-Telefon: +49 (0)40 - 57309722 \
+Telefon: {{site.address.phone}} \
 E-Mail: mail@fuxlab.com
 
 Umsatzsteuer-ID
